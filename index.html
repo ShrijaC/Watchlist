@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Watchlist Tracker</title>
+    <link href="styles.css" rel="stylesheet"/>
+	<script src="main.js"></script>
+</head>
+<body>
+    <header>
+		<h1>MY WATCHLIST</h1>
+		<form id="newlistform" onsubmit="return validateForm()" method="post">
+			<input 
+				type="text" 
+				name="newlistinput" 
+				id="newlistinput" 
+				placeholder="What are you gonna watch next?" />
+			<input 
+				type="submit"
+				id="newlistsubmit" 
+				value="ADD NEW" />
+		</form>
+	</header>
+    <main>
+		<section class="watchlist">
+			<h2>DRAMA / MOVIE I HAVE TO WATCH:</h2>
+
+			<div id="lists">
+
+				  <!--<div class="list">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="Drama / Movie name" 
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="watched">Watched</button>
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+
+			</div>
+		</section>
+	</main>
+	
+</body>
+</html>

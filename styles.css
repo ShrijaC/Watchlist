@@ -1,0 +1,166 @@
+:root {
+	--dark:#993399;
+	--darker:  #47004c;
+	--darkest: #231025;
+	--pink: #ffb3ec;
+	--purple: #bf74d4;
+	--light: #d9b3ff;
+}
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Fira sans", sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: var(--light);
+	font-family: sans-serif;
+	background-color:var(--light) ;
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-family: Impact, serif;
+	font-size: 2.5rem;
+	font-weight: 300;
+	color: var(--darker);
+	margin-bottom: 1rem;
+}
+
+h1, h2 {
+    font-family: Impact, serif;
+}
+
+#newlistform {
+	display: flex;;
+}
+
+input, button {
+	appearance: none;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+#newlistinput {
+	flex: 1 1 0%;
+	background-color: var(--darker);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	color: var(--light);
+	font-size: 1.25rem;
+}
+
+#newlistinput::placeholder {
+	color: var(--light);
+	opacity: 0.3;
+}
+
+#newlistsubmit {
+	font-size: 1.25rem;
+	font-weight: 700;
+	color: var(--purple);
+	cursor: pointer;
+	transition: 0.4s;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-right: 1rem;
+	background-color: var(--darker);
+
+}
+
+#newlistsubmit:hover {
+	opacity: 0.8;
+}
+
+#newlistsubmit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.watchlist {
+	padding: 1rem;
+}
+
+.watchlist h2 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	color: var(--darker);
+	margin-bottom: 1rem;
+}
+
+#lists .list {
+	display: flex;
+	justify-content: space-between;
+	background-color: var(--darkest);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
+}
+
+.list .content {
+	flex: 1 1 0%;
+}
+
+.list .content .text {
+	color: var(--purple);
+	font-size: 1.125rem;
+	width: 100%;
+	display: block;
+	transition: 0.4s;
+}
+
+.list .content .text:not(:read-only) {
+	color: var(--pink);
+}
+
+.list .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.list .actions button {
+	cursor: pointer;
+	margin: 0 0.5rem;
+	font-size: 1.125rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: 0.4s;
+}
+
+.list .actions button:hover {
+	opacity: 0.8;
+}
+
+.list .actions button:active {
+	opacity: 0.6;
+}
+
+.list .actions .to_watch {
+	color: var(--pink);
+}
+
+.list .actions .edit {
+    color: var(--purple);
+}
+
+.list .actions .delete {
+	color: var(--pink);
+}
